@@ -150,17 +150,7 @@ require_once('storage.php');
 /* BACKEND MENU
  * ******************************* */
 Configure::write('Config.backendMenu', array(
-    'Gestion du site' => array(
-        'dropdown' => array(
-            'Ecoles' => array('controller' => 'schools', 'action' => 'index'),
-            'Cours' => array('controller' => 'courses', 'action' => 'index'),
-            'Programmes' => array('controller' => 'programmes', 'action' => 'index'),
-            'Villes' => array('controller' => 'cities', 'action' => 'index'),
-            'Promotions' => array('controller' => 'promotions', 'action' => 'index'),
-            'Destinations' => array('controller' => 'destinations', 'action' => 'index'),
-            'Langues' => array('controller' => 'languages', 'action' => 'index')
-        )
-    ),
+    'Artists' => array('controller' => 'artists', 'action' => 'index', 'admin' => true),
     'Medias' => array('controller' => 'attachments', 'action' => 'index', 'admin' => true),
     
     'Utilisateurs' => array(

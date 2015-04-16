@@ -87,7 +87,7 @@
         <script>
 
             // tinymce
-            tinymce.init({
+            /*tinymce.init({
                 relative_urls: false,
                 remove_script_host: false,
                 convert_urls: true,
@@ -102,7 +102,7 @@
                 ],
                 image_list: "<?php echo $this->Html->url(array('controller' => 'attachments', 'action' => 'list', 'admin' => TRUE)); ?>",
                 image_dimensions: false
-            });
+            });*/
 
             $(document).ready(function() {
                 $("select[multiple]").chosen({
