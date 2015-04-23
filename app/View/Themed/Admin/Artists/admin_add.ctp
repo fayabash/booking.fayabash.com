@@ -20,7 +20,8 @@
                 'types' => array(
                     'image/jpeg',
                     'image/png',
-                    'application/pdf'
+                    'application/pdf',
+                    'application/zip'
                 )
             )
         ));

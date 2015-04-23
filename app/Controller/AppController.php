@@ -31,7 +31,7 @@ class AppController extends Controller {
         parent::beforeFilter();
         // Auth
         $this->Auth->allow(
-                'display'/*,'admin_index','admin_add','admin_edite','admin_delete'*/
+                'display','index','view'/*,'admin_index','admin_add','admin_edite','admin_delete'*/
         );
         
         if (array_key_exists('admin', $this->request->params)) {

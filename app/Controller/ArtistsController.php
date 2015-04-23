@@ -68,7 +68,7 @@ class ArtistsController extends AppController {
     public function admin_add() {
         if ($this->request->is('post')) {
             $this->Artist->create();
-            if ($this->Artist->save($this->request->data)) {
+            if ($this->Artist->saveAssociated($this->request->data)) {
                 $this->Session->setFlash(__('The artist has been saved'), 'default', array('class' => 'alert alert-success'));
                 return $this->redirect(array('action' => 'index'));
             } else {
@@ -91,7 +91,7 @@ class ArtistsController extends AppController {
             throw new NotFoundException(__('Invalid artist'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
-            if ($this->Artist->save($this->request->data)) {
+            if ($this->Artist->saveAssociated($this->request->data)) {
                 $this->Session->setFlash(__('The artist has been saved'), 'default', array('class' => 'alert alert-success'));
                 return $this->redirect(array('action' => 'index'));
             } else {
