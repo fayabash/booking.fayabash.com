@@ -8,7 +8,7 @@ Configure::write('Storage.settings', array(
 	
 	'base'=>'files',
 	
-	'maxsize' => 30, // 30MB
+	'maxsize' => 100, // 30MB
 	
 	'path' => '{$modelName}{DS}{$year}',//'{$modelName}{DS}{$group}{DS}{$user}{DS}{$year}{DS}{$month}{DS}{$type}{DS}{$subtype}',
 	
@@ -23,6 +23,7 @@ Configure::write('Storage.settings', array(
                 'video/mp4',
                 'video/ogg',
                 'audio/ogg',
+            'application/zip',
             'application/vnd.openxmlformats-officedocument.presentationml.presentation',
             'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
             'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'

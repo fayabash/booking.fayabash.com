@@ -20,7 +20,7 @@ class ArtistsController extends AppController {
     
     public function index() {
         $this->set('artists', $this->Artist->find('all',array(
-            'recursive' => 0,
+            'recursive' => 1,
             'order' => array(
                 'Artist.name' => 'ASC'
             )

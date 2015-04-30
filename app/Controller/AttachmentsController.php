@@ -86,7 +86,17 @@ class AttachmentsController extends AppController {
                     'status' => 1,
                     'attachment' => $attachment['Attachment']
                 );
+            }else{
+                $data = array(
+                    'status' => 0,
+                    'message' => 'not able to save: '
+                );
             }
+        }else{
+            $data = array(
+                'status' => 0,
+                'message' => 'no post'
+            );
         }
 
         $this->set('data', $data);

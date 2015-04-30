@@ -17,7 +17,7 @@
         echo $this->element('Attachment/add', array(
             'settings' => array(
                 'relations' => 'habtm',
-                'maxsize' => 30, // 30MB
+                'maxsize' => 80, // 30MB
                 'types' => array(
                     'image/jpeg',
                     'image/png',
