@@ -24,7 +24,7 @@
         </title>
 
         <?php
-        $this->HtmlVersion->version = '0.0.1';
+        $this->HtmlVersion->version = '0.0.3';
 
         echo $this->Html->meta('icon');
 
@@ -55,7 +55,7 @@
                 </div>
             <![endif]-->
             
-            <div id="content" class="container">
+            <div id="content" class="">
             <?php
             echo $this->Session->flash();
             echo $this->fetch('content');

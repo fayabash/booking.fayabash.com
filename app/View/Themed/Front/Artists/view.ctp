@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <h2 class="text-center hidden-xs hidden-sm">
         <?php echo $this->Html->link('FB', 'http://www.fayabash.com'); ?>
     </h2>
@@ -11,7 +11,7 @@
 
 </div>
 
-<section class="artists-view container">
+<section class="artists-view container-fluid">
     <div class="row">
 
         
