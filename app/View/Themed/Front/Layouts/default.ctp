@@ -24,7 +24,7 @@
         </title>
 
         <?php
-        $this->HtmlVersion->version = '0.0.3';
+        $this->HtmlVersion->version = '0.0.4';
 
         echo $this->Html->meta('icon');
 

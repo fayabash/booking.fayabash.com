@@ -2,7 +2,7 @@
     <h2 class="text-center">
         <?php echo $this->Html->link('FB', 'http://www.fayabash.com'); ?>
     </h2>
-    <h1 class="text-center">ART I STS BOOK I NG</h1>
+    <h1 class="text-center">ARTISTS BOOKING</h1>
 
     <section class="artists-index text-center">
         <?php foreach( $artists as $artist ): ?>

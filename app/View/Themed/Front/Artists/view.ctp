@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <h2 class="text-center hidden-xs hidden-sm">
+    <h2 class="text-center hidden-xs hidden-sm" style="margin-bottom: -3px;">
         <?php echo $this->Html->link('FB', 'http://www.fayabash.com'); ?>
     </h2>
 
@@ -32,7 +32,7 @@
                 <?php echo $this->Html->link('ARTIST BOOKING', '/'); ?>
             </h2>
 
-            <h1 class="text-center hidden-xs hidden-sm" style="margin:55px 0 0 0;"><?php echo $artist['Artist']['name']; ?></h1>
+            <h1 class="text-center hidden-xs hidden-sm" style="margin:55px 0 -11px 0;"><?php echo $artist['Artist']['name']; ?></h1>
             <p>
                 <?php
                 $images = array();
@@ -60,25 +60,27 @@
         <!-- links press-->
         <div class="col-md-3 links">
             <div class="text-center" style="text-transform:uppercase;">
-    		<h4>LINKS</h4>
-    		<?php echo $this->Markdown->decode($artist['Artist']['links']); ?>
+                <div class="artist-view_side-item">
+                    <h4>LINKS</h4>
+                    <?php echo $this->Markdown->decode($artist['Artist']['links']); ?>
+                </div>
     		
-    	   <div class="spacer"></div>
+                <div class="artist-view_side-item">
+                    <h4>PRESSKIT</h4>
+                    <?php foreach( $artist['Attachment'] as $attachment  ):?>
+                        <?php if( $attachment['type'] != 'image' ):?>
+                            <?php 
+                            echo $this->Html->link('downlaod presskit','/'.$attachment['path']);
+                            ?>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
 
-    		<h4>PRESSKIT</h4>
-    		<?php foreach( $artist['Attachment'] as $attachment	 ):?>
-    			<?php if( $attachment['type'] != 'image' ):?>
-    				<?php 
-    				echo $this->Html->link('downlaod presskit','/'.$attachment['path']);
-    				?>
-    			<?php endif; ?>
-    		<?php endforeach; ?>
-    		
-            <div class="spacer"></div>
-    		
-    		<h4>CONTACT</h4>
-    		<p><a href="mailto:booking@fayabash.com">booking@fayabash.com</a></p>
-            </div>
+                <div class="artist-view_side-item">
+                    <h4>CONTACT</h4>
+                    <p><a href="mailto:booking@fayabash.com">booking@fayabash.com</a></p>
+                </div>
+    	   </div>
         </div>
     </div>
 </section>
