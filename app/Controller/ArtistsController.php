@@ -22,7 +22,7 @@ class ArtistsController extends AppController {
         $this->set('artists', $this->Artist->find('all',array(
             'recursive' => 1,
             'order' => array(
-                'Artist.name' => 'ASC'
+                'RAND()'
             )
         )));
     }
@@ -31,7 +31,11 @@ class ArtistsController extends AppController {
         if (!$this->Artist->exists($id)) {
             throw new NotFoundException(__('Invalid artist'));
         }
-        $options = array('conditions' => array('Artist.' . $this->Artist->primaryKey => $id));
+        $options = array(
+            'conditions' => array(
+                'Artist.' . $this->Artist->primaryKey => $id
+            )
+        );
         $this->set('artist', $this->Artist->find('first', $options));
     }
     

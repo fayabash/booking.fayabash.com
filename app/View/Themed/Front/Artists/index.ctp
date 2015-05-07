@@ -29,11 +29,7 @@
 
                 
 
-               echo $this->Image->image(array(
-                    'image' => $image,
-                    'width' => '600',
-                    'cropratio' => '6:4'
-                ),array(
+               echo $this->Html->image('../'.$image,array(
                     'class' => 'img-responsive img-absolute'
                 ));
                         

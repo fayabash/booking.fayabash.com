@@ -81,7 +81,7 @@ a, a:hover, a:focus, a:visited { color: black; text-decoration: none; }
 /* ARTIST INDEX
 **************************************************/
 .artist-index { position: relative; }
-.img-absolute { z-index: -1; position: absolute; top: 204px; left:50%; margin-left: -300px; opacity: 0; }
+.img-absolute { z-index: -1; position: absolute; top: 304px; left:50%; margin-left: -170px; opacity: 0; }
 .img-absolute { transition: opacity .3s; -webkit-transition: opacity .3s; -moz-transition: opacity .3s; -ms-transition: opacity .3s; -o-transition: opacity .3s; }
 
 

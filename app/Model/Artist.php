@@ -48,7 +48,7 @@ class Artist extends AppModel {
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
-			'order' => '',
+			'order' => 'AttachmentsArtist.order ASC',
 			'limit' => '',
 			'offset' => '',
 			'finderQuery' => '',
