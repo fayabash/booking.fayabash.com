@@ -71,7 +71,7 @@
                     <?php foreach( $artist['Attachment'] as $attachment  ):?>
                         <?php if( $attachment['type'] != 'image' ):?>
                             <?php 
-                            echo $this->Html->link('downlaod presskit','/'.$attachment['path']);
+                            echo $this->Html->link('download presskit','/'.$attachment['path']);
                             ?>
                         <?php endif; ?>
                     <?php endforeach; ?>
