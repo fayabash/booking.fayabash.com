@@ -24,7 +24,7 @@
         </title>
 
         <?php
-        $this->HtmlVersion->version = '0.0.5';
+        $this->HtmlVersion->version = '0.0.6';
 
         echo $this->Html->meta('icon');
 
@@ -89,7 +89,7 @@ echo $this->Html->script(array(
         <?php echo $this->fetch('script'); ?>
 
         <script>
-            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+            var _gaq = [['_setAccount', 'UA-5622723-4'], ['_trackPageview']];
             (function (d, t) {
                 var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
                 g.src = '//www.google-analytics.com/ga.js';

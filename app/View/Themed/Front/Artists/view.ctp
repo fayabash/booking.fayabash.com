@@ -49,7 +49,8 @@
                     'image' => $image,
                     'width' => '992'
                 ),array(
-                    'class' => 'img-responsive'
+                    'class' => 'img-responsive',
+                    'style' => 'min-width: 100%;'
                 ));
                         
                 ?>
